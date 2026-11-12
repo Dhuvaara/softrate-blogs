@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softrate Blog | Technology & Innovation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="nav">
+      <a class="brand" href="#">
+        <div class="brand-mark">S</div>
+        <div>
+          <span>SOFTRATE</span>
+          <small>MAKING IDEAS HAPPEN</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="active" href="#">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="https://softrateglobal.com/" target="_blank">Company Website ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Softrate Technologies · Blog</div>
+      <h1>Ideas, insights &amp; technology.</h1>
+      <p>Explore practical articles on software development, emerging technologies, digital trends and innovation from the Softrate team.</p>
+      <div class="search-wrap">
+        <input id="searchInput" type="text" placeholder="Search articles (e.g. cloud, ai, code)...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="section-heading">
+      <h2>Featured article</h2>
+      <span class="muted">EDITOR'S PICK</span>
+    </div>
+    <section class="featured" id="featuredArticle">
+      <div class="featured-image" role="img" aria-label="Technology circuit board"></div>
+      <div class="featured-copy">
+        <span class="tag">TECHNOLOGY</span>
+        <h3>How emerging technologies are shaping modern businesses</h3>
+        <div class="muted">Softrate Editorial Team &nbsp; · &nbsp; 5 min read</div>
+        <p>From cloud platforms to artificial intelligence, technology is helping businesses work smarter, serve customers better and build new digital experiences.</p>
+        <button class="read-link" id="featuredReadBtn">Read full article →</button>
+      </div>
+    </section>
+
+    <div class="section-heading" id="articles">
+      <h2>Latest articles</h2>
+      <span class="muted">INSIGHTS FROM SOFTRATE</span>
+    </div>
+
+    <div class="layout">
+      <section>
+        <div class="posts" id="postList">
+          <article class="post" data-category="Software Development" data-article="clean-code">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Developer working at a laptop">
+            <div class="post-body">
+              <span class="tag">SOFTWARE DEVELOPMENT</span>
+              <h3>5 good practices for writing clean code</h3>
+              <div class="muted">6 min read · Development</div>
+              <p>Simple habits that make code easier to read, test, maintain and improve as a team.</p>
+              <button class="read-link">Read article →</button>
+            </div>
+          </article>
+          <article class="post" data-category="Artificial Intelligence" data-article="ai-intro">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="Artificial intelligence concept">
+            <div class="post-body">
+              <span class="tag">ARTIFICIAL INTELLIGENCE</span>
+              <h3>Artificial intelligence: a beginner-friendly introduction</h3>
+              <div class="muted">4 min read · AI</div>
+              <p>Understand what AI is, where it is used and how it supports everyday applications.</p>
+              <button class="read-link">Read article →</button>
+            </div>
+          </article>
+          <article class="post" data-category="Web Development" data-article="web-design">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800" alt="Web design on a computer">
+            <div class="post-body">
+              <span class="tag">WEB DEVELOPMENT</span>
+              <h3>What makes a website user-friendly?</h3>
+              <div class="muted">3 min read · Design</div>
+              <p>Learn why clear navigation, readable content and responsive layouts matter to visitors.</p>
+              <button class="read-link">Read article →</button>
+            </div>
+          </article>
+          <article class="post" data-category="Technology Trends" data-article="cloud-computing">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Electronic circuit board">
+            <div class="post-body">
+              <span class="tag">TECHNOLOGY TRENDS</span>
+              <h3>Understanding the role of cloud computing</h3>
+              <div class="muted">5 min read · Cloud</div>
+              <p>A quick look at how cloud services help teams access tools, store data and scale systems.</p>
+              <button class="read-link">Read article →</button>
+            </div>
+          </article>
+        </div>
+        <p class="empty" id="emptyMessage">🔍 No matching articles found. Try another search keyword or select "All articles".</p>
+      </section>
+
+      <aside class="sidebar" id="categories">
+        <div class="side-box">
+          <h3>Browse categories</h3>
+          <button class="category selected" data-cat="All">
+            <span>All articles</span>
+            <span class="category-count">4</span>
+          </button>
+          <button class="category" data-cat="Software Development">
+            <span>Software Development</span>
+            <span class="category-count">1</span>
+          </button>
+          <button class="category" data-cat="Artificial Intelligence">
+            <span>Artificial Intelligence</span>
+            <span class="category-count">1</span>
+          </button>
+          <button class="category" data-cat="Web Development">
+            <span>Web Development</span>
+            <span class="category-count">1</span>
+          </button>
+          <button class="category" data-cat="Technology Trends">
+            <span>Technology Trends</span>
+            <span class="category-count">1</span>
+          </button>
+        </div>
+        <div class="side-box">
+          <h3>About this blog</h3>
+          <p class="muted">The Softrate Blog shares technology knowledge, tutorials, company updates and ideas from the world of software engineering.</p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="about" id="about">
+      <h2>About Softrate Blog</h2>
+      <p>A simple knowledge space for developers, businesses and technology enthusiasts. Read, learn and explore ideas that help turn technology into practical solutions.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Softrate Technologies. Blog concept website.</span>
+      <span>Think Software, Think Softrate · <a href="https://softrateglobal.com/" target="_blank">softrateglobal.com</a></span>
+    </div>
+  </footer>
+
+  <!-- Reader Modal Window -->
+  <div id="readerModal" class="reader-modal">
+    <div class="reader-box">
+      <span class="close-reader" id="closeReaderBtn">&times;</span>
+      <span id="readerTag" class="reader-tag"></span>
+      <h2 id="readerTitle" class="reader-title"></h2>
+      <div id="readerMeta" class="reader-meta"></div>
+      <div id="readerBody" class="reader-body"></div>
+      <button class="reader-footer-btn" id="doneReaderBtn">Done Reading &times;</button>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
