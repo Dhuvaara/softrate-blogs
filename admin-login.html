@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Softrate</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f6fc;
+        }
+
+        .login-box {
+            width: 90%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px #00000015;
+        }
+
+        h2 {
+            text-align: center;
+            color: #17263c;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 25px;
+            background: #0877c9;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #065e9f;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 15px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h2>SOFTRATE ADMIN LOGIN</h2>
+
+    <form id="loginForm">
+
+        <label>Email Address</label>
+        <input type="email" id="email"
+               placeholder="Enter Email" required>
+
+        <label>Password</label>
+        <input type="password" id="password"
+               placeholder="Enter Password" required>
+
+        <button type="submit">Login</button>
+
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+<script>
+    const adminEmail = "admin@softrate.com";
+    const adminPassword = "Softrate@123";
+
+    document.getElementById("loginForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+
+        if (email === adminEmail && password === adminPassword) {
+
+            window.location.href = "admin-dashboard.html";
+
+        } else {
+
+            document.getElementById("message").innerText =
+                "Invalid Email or Password!";
+
+        }
+
+    });
+</script>
+
+</body>
+</html>
